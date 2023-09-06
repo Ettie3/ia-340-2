@@ -51,15 +51,15 @@ ALTER TABLE course
     MATCH SIMPLE
 ;
     
-ALTER TABLE course
-    ADD    FOREIGN KEY (c_number)
-    REFERENCES enroll(c_number)
+ALTER TABLE enroll
+    ADD    FOREIGN KEY (s_email)
+    REFERENCES student(s_email)
     MATCH SIMPLE
 ;
     
 ALTER TABLE enroll
-    ADD    FOREIGN KEY (s_email)
-    REFERENCES student(s_email)
+    ADD    FOREIGN KEY (c_number)
+    REFERENCES course(c_number)
     MATCH SIMPLE
 ;
     
