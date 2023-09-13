@@ -41,5 +41,5 @@ WHERE p_email = 'p1@jmu.edu';
 DELETE from professor
 WHERE p_email = 'p1@jmu.edu';
 /*
-Update the course table then the professor table because  
+Update the course table then the professor table or else p1 is still the professor
 */
