@@ -31,8 +31,7 @@ values ('p3@jmu.edu','p3','o3');
 insert into course (c_number, c_name, room, p_email)
 values ('c4','facebook','r1', 'p3@jmu.edu'); 
 /* 
-You need to do the professor table first since it holds the primary key,
-for the course table
+Professor table first because it has the primary key for the course table
 */
 
 --2.6 
@@ -42,5 +41,5 @@ WHERE p_email = 'p1@jmu.edu';
 DELETE from professor
 WHERE p_email = 'p1@jmu.edu';
 /*
-You must update the course table first then you can edit the professor table. 
+Update the course table then the professor table because  
 */
